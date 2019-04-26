@@ -3,7 +3,7 @@
 # Primary download URL for the ProxySQL packages
 # Type: Str
 proxysql_download_url: https://github.com/sysown/proxysql/releases/download
-
+#
 # Name of the ProxySQL package
 # Type: List
 proxysql_pkgs:
