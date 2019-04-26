@@ -16,12 +16,9 @@ Release 0.3.0 is compatible with Ansible 2.7.0 or lower.
 This role installs and configures [ProxySQL](https://proxysql.com/) - the
 high performance, high availability, protocol aware proxy for MySQL.
 
-Since version 2.3.0 Ansible is providing an
-[module to configure ProxySQL](https://docs.ansible.com/ansible/latest/modules/list_of_database_modules.html#proxysql)
-itself. This Ansible role is using this functionality but adding some
+This Ansible role is using this functionality but adding some
 (hopefully useful) features on top:
 
-- Automatic installation for [different operating systems](#testing)
 - (Pre-) generation of [proxysql.cnf](templates/proxysql.cnf.j2)
 - Manage a
   [ProxySQL-Cluster](https://github.com/sysown/proxysql/wiki/ProxySQL-Cluster)
@@ -30,10 +27,6 @@ itself. This Ansible role is using this functionality but adding some
   which adds the functionality to configure ProxySQL servers)
 - Differentiate between dynamic and static `global_variables` - restart
   ProxySQL if required
-
-Please also take a look at the
-"[Known issues or: Good to know](#known-issues-or-good-to-know)" section in
-this document.
 
 ## Requirements
 
@@ -49,11 +42,6 @@ pip install ansible==2.7.9
 
 All platform requirements are listed in the metadata file.
 
-## Install
-
-```sh
-ansible-galaxy install timorunge.proxysql
-```
 
 ## Role Variables
 
